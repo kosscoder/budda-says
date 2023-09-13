@@ -1,0 +1,101 @@
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main {
+	width: 100wv;
+	height: 100vh;
+	background-image: url(./../img/buddha-bg-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.main__btn {
+	color:#504E53;
+	font-size: 38px;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+	margin-top: 100px;
+	letter-spacing: 1px;
+	background:none;
+	text-transform: uppercase;
+	transition: all 0.6s;
+}
+
+.main__btn:hover {
+	font-size: 48px;
+	color: #126a80;
+}
+
+.desc {
+	width: 100%;
+	height: 100vh;
+	background-image: url(./../img/buddha-bg-desc.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/* display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end; */
+
+	display: none;
+	grid-template-rows: repeat(3 / 1fr);
+	justify-items: end;
+}
+
+.desc__item {
+	width: 950px;
+	margin-right: 50px;
+}
+
+.desc__title {
+	justify-self: center;
+	padding: 76px 0 76px;
+	color: #126a80;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.desc-item__text {
+	font-size: 21px;
+	line-height: 22px;
+	color: #39323C;
+}
+
+.desc__btn-top {
+	align-self: flex-end;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	background: none;
+	border: 2px solid #39323C;
+	color: #39323C;
+	font-weight: 600;
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+
+.desc__btn-top:hover {
+	border: 2px solid #126a80;
+	color: #126a80;
+	padding: 10px 24px;
+}
+
+/* .main__audio {
+	justify-self: start;
+	padding: 15px 20px 0 0;
+} */
+
+audio::-webkit-media-controls-panel {
+	background-color: #DFE0E2;
+	/* opacity: 0.7; */
+ }
